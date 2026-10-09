@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Universal MD Clipper</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>📄 Universal MD Clipper</h1>
+      <p class="subtitle">Сохранить статью в Markdown</p>
+    </div>
+
+    <div id="metadata-block" class="metadata hidden">
+      <div class="meta-row">
+        <span class="meta-label">Заголовок:</span>
+        <span id="meta-title" class="meta-value">—</span>
+      </div>
+      <div class="meta-row">
+        <span class="meta-label">Автор:</span>
+        <span id="meta-author" class="meta-value">—</span>
+      </div>
+      <div class="meta-row">
+        <span class="meta-label">Дата:</span>
+        <span id="meta-date" class="meta-value">—</span>
+      </div>
+      <div class="meta-row">
+        <span class="meta-label">Теги:</span>
+        <span id="meta-tags" class="meta-value tags">—</span>
+      </div>
+    </div>
+
+    <div id="status-block" class="status hidden">
+      <div class="spinner"></div>
+      <span id="status-text">Инициализация...</span>
+    </div>
+
+    <div id="result-block" class="result hidden">
+      <div class="result-icon">✅</div>
+      <div id="result-text">Статья сохранена!</div>
+    </div>
+
+    <div id="error-block" class="error hidden">
+      <div class="result-icon">❌</div>
+      <div id="error-text">Произошла ошибка</div>
+    </div>
+
+    <button id="clip-button" class="big-button">
+      <span class="button-icon">⬇️</span>
+      <span class="button-text">Скачать статью</span>
+    </button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

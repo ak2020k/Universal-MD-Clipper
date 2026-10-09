@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Universal Article to MD (Firefox)",
+  "version": "1.1.0",
+  "description": "Скачивает статьи в Markdown с метаданными, таблицами и оригинальными ссылками на изображения.",
+  "permissions": [
+    "activeTab",
+    "downloads",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "scripts": [
+      "lib/turndown.js",
+      "lib/turndown-plugin-gfm.js",
+      "background.js"
+    ]
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Скачать статью в MD",
+    "default_icon": "icons/icon48.png"
+  }
+}
