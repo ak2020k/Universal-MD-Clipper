@@ -21,9 +21,11 @@
 ---
 
 ## 📸 Как это выглядит
+
 [Открытое popup-окно расширения](screenshots/Universal-MD-Clipper.png)
 
 [Пример полученного Markdown-файла в Obsidian](screenshots/Universal-MD-Clipper1.png)
+
 ---
 
 ## 📥 Установка
